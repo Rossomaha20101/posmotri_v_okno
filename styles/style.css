@@ -51,6 +51,7 @@ ol {
 }
 
 .button {
+  border: none;
   border: 1px solid #fff;
   color: #fff;
   font-family: inherit;
@@ -70,6 +71,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: -2px;
 }
 
 /* main */
@@ -200,7 +202,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 21px;
+  gap: 22px;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -208,7 +210,7 @@ ol {
 .title {
   font-family: Oswald, sans-serif;
   font-size: 75px;
-  line-height: 0.933;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -253,6 +255,9 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
+  justify-self: flex-start;
+  width: 394px;
+  height: 107px;
 }
 
 .content__video-card-description-container {
@@ -267,6 +272,11 @@ ol {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -276,14 +286,16 @@ ol {
   line-height: 0.9;
 }
 
+/* image preview */
 .content__video-card-thumbnail {
   object-fit: cover;
   object-position: center;
-  min-inline-size: 200px;
-  block-size: 107px;
+  inline-size: 194px;
+  block-size: 103px;
+  align-self: center;
 }
 
 .more-button {
   inline-size: 100%;
-  min-block-size: 34px;
+  block-size: 34px;
 }
